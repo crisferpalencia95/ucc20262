@@ -31,6 +31,13 @@ public class CuentaBancaria {
         return saldo;
     }
 
+    public double debitar(double monto){
+
+        saldo -= monto;
+        return saldo;
+
+    }
+
     public String toString(){
         return "CuentaBancaria [ titular: " + titular + " numeroCuenta: " + numeroCuenta + " saldo: " + saldo + 
                            " tipoCuenta: " + tipoCuenta + " banco: " + banco + " clave: " + clave + " direccion: " + direccion + " ]";
