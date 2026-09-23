@@ -19,6 +19,12 @@ public class MainCuentaBancaria {
 
         System.out.println("Datos personales actualizados de la cuenta 1: " + objCuenta1.toString());
         System.out.println("Datos personales actualizados de la cuenta 2: " + objCuenta2.toString());
+
+        objCuenta1.depositar(125000);
+        objCuenta2.debitar(50000);
+
+        System.out.println("Cliente 1 deposito: "+objCuenta1.depositar(125000));
+        System.out.println("Cliente 2 Retiro: "+objCuenta2.debitar(50000));
        
     }
   

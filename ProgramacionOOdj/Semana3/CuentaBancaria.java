@@ -9,6 +9,7 @@ public class CuentaBancaria {
     private int clave;
     private String direccion;
 
+    //Costructor de la clase --> siempre debe tener el mismo nombre de la clase
     public CuentaBancaria(String titular, String numeroCuenta, double saldo, String tipoCuenta, String banco, int clave, String direccion) {
         this.titular = titular;
         this.numeroCuenta = numeroCuenta;
@@ -28,16 +29,23 @@ public class CuentaBancaria {
 
     public double depositar(double monto){
         saldo += monto;
-        return saldo;
+        if(monto > 0){
+            return saldo;
+        }else { 
+            return 0;
+        }
     }
 
     public double debitar(double monto){
-
         saldo -= monto;
-        return saldo;
-
+        if(monto > 0){
+            return 0;
+        }else { 
+            return saldo;
+        }
     }
 
+    @Override 
     public String toString(){
         return "CuentaBancaria [ titular: " + titular + " numeroCuenta: " + numeroCuenta + " saldo: " + saldo + 
                            " tipoCuenta: " + tipoCuenta + " banco: " + banco + " clave: " + clave + " direccion: " + direccion + " ]";
