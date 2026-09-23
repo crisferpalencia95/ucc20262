@@ -37,12 +37,22 @@ public class CuentaBancaria {
     }
 
     public double debitar(double monto){
-        saldo -= monto;
+        //saldo -= monto;
         if(monto > 0){
-            return 0;
+            double total = saldo - monto;
+            if(total > 0){
+                saldo -= monto;
+                return saldo;
+            }else{
+                return 0;
+            }
         }else { 
-            return saldo;
+            return -1;
         }
+    }
+
+    public void consutarSaldo(){
+        System.out.println("Saldo Actual "+saldo);
     }
 
     @Override 
