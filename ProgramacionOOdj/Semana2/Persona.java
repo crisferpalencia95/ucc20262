@@ -1,7 +1,3 @@
-import java.beans.ConstructorProperties;
-
-import javax.management.ConstructorParameters;
-
 public class Persona {
     
     //Atributos de persona
