@@ -1,0 +1,73 @@
+public class Libro {
+
+    private int isbn;
+    private String titulo;
+    private String autor;
+    private int anioPublicacion;
+    private String disponible;
+
+    public Libro(int isbn, String titulo, String autor, int anioPublicacion, String disponible){
+        this.isbn = isbn;
+        this.titulo = titulo;
+        this.autor = autor;
+        this.anioPublicacion = anioPublicacion;
+        this.disponible = disponible;
+    }
+
+    public int getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(int isbn) {
+        switch (isbn) {
+            case 0:
+                System.out.println("ISBN no puede ser 0");
+                break;
+            default:
+                if (isbn < 0) {
+                    System.out.println("ISBN no puede ser negativo");
+                }
+                break;
+        }
+        this.isbn = isbn;
+    }
+
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public int getAnioPublicacion() {
+        return anioPublicacion;
+    }
+
+    public void setAnioPublicacion(int anioPublicacion) {
+        this.anioPublicacion = anioPublicacion;
+    }
+
+    public String getDisponible() {
+        return disponible;
+    }
+
+    public void setDisponible(String disponible) {
+        this.disponible = disponible;
+    }
+
+    @Override
+    public String toString() {
+        return "Libro[ isbn :" + isbn +", titulo:'" + titulo + "', autor:'" + autor + "', anioPublicacion:" + anioPublicacion +", disponible:'" + disponible  +"']";
+    }
+
+}
