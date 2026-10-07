@@ -42,37 +42,30 @@ public class Producto {
         this.stock = stock;
     }
 
-    public void vender(String producto, int cantidad) {
-        if (this.nombre.equals(producto) || this.codigo == Integer.parseInt(producto)) {
-            if (cantidad <= stock) {
-                stock -= cantidad;
-                System.out.println("Se vendieron " + cantidad + " unidades de " + this.nombre);
-            } else {
-                //int vendidos = stock;
-                //stock = 0;
-                System.out.println("Solo hay disponibles " + stock + " unidades de " + this.nombre + ". No hay más stock disponible.");
-            }
+    public void vender(int cantidad) {
+        if (cantidad <= stock) {
+            stock -= cantidad;
+            System.out.println("Se vendieron " + cantidad + " unidades de " + this.nombre);
         } else {
-            System.out.println("El producto no coincide con el nombre o codigo proporcionado: " + producto);
+            System.out.println("Solo hay disponibles " + stock + " unidades de " + this.nombre + ". No hay más stock disponible.");
         }
     }
 
-    public void reabastecer(String producto, int cantidad) {
+    public void reabastecer(int cantidad) {
+        stock += cantidad;
+        System.out.println("Se reabastecieron " + cantidad + " unidades de " + this.nombre);
+    }
+
+    public void valorInventario() {
+        System.out.println("Valor inventario de " + this.nombre + ": " + (precio * stock));
+    }
+
+    public void venderProducto(String producto, int cantidad) {
         if (this.nombre.equals(producto) || this.codigo == Integer.parseInt(producto)) {
-            stock += cantidad;
-            System.out.println("Se reabastecieron " + cantidad + " unidades de " + this.nombre);
+            vender(cantidad);
         } else {
             System.out.println("El producto no coincide con el nombre o codigo proporcionado: " + producto);
         }
-    }
-
-    public int valorInventario(int codigo) {
-        if (this.codigo == codigo) {
-            return (int) (precio * stock);
-        } else {
-            System.out.println("El producto no coincide con el codigo proporcionado: " + codigo);
-            return 0;
-        }   
     }
 
     public String toString() {
