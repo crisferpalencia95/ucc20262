@@ -13,6 +13,10 @@ public class Cuenta {
         this.saldo += valor;
     }
 
+    public double getSaldo() {
+        return this.saldo;
+    }
+
     @Override
     public String toString() {
         return "Cuenta [numeroCuenta=" + numeroCuenta + ", titular=" + titular + ", saldo=" + saldo + "]";

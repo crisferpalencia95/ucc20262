@@ -1,5 +1,3 @@
-package ProgramacionOOdj.Semana6;
-
 public class Banco {
     private String nombre;
     private String direccion;
@@ -14,5 +12,9 @@ public class Banco {
     public void abrirCuenta(Cliente cliente) {
         // Lógica para abrir una cuenta para el cliente
         System.out.println("Abriendo cuenta para el cliente: " + cliente);
+    }
+
+    public String toString() {
+        return "Banco [nombre=" + nombre + ", direccion=" + direccion + ", cuenta=" + cuenta + "]";
     }
 }
