@@ -1,7 +1,7 @@
 public class Cliente {
     private int identificacion;
     private String nombre;
-    
+
     public Cliente(int identificacion, String nombre) {
         this.identificacion = identificacion;
         this.nombre = nombre;
