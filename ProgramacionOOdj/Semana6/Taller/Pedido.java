@@ -16,7 +16,7 @@ public class Pedido {
     }
 
     public String toString() {
-        return "Pedido :{cliente=" + cliente + ", producto:{" + java.util.Arrays.toString(producto) + "}, fecha=" + fecha
+        return "Pedido :{cliente=" + cliente + ", productos:{" + java.util.Arrays.toString(producto) + "}, fecha=" + fecha
                 + ", numeroTarjetaCredito=" + numeroTarjetaCredito + "}";
     } 
 
