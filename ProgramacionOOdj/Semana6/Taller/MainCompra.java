@@ -14,5 +14,7 @@ public class MainCompra {
         Pedido pedido1 = new Pedido(cliente1, productos, new java.util.Date(), 1234567890);
 
         System.out.println(pedido1);
+        Impresion impresion1 = (Impresion) productos[0];
+        impresion1.imprmirFotos();
     }
 }
