@@ -1,0 +1,91 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Arreglos",
+            "request": "launch",
+            "mainClass": "Arreglos",
+            "projectName": "ucc20262_663ae0dd"
+        },
+        {
+            "type": "java",
+            "name": "Ejemplo1",
+            "request": "launch",
+            "mainClass": "Ejemplo1",
+            "projectName": "ucc20262_663ae0dd"
+        },
+        {
+            "type": "java",
+            "name": "MainBanco",
+            "request": "launch",
+            "mainClass": "MainBanco",
+            "projectName": "ucc20262_663ae0dd"
+        },
+        {
+            "type": "java",
+            "name": "MainCuentaBancaria",
+            "request": "launch",
+            "mainClass": "MainCuentaBancaria",
+            "projectName": "ucc20262_663ae0dd"
+        },
+        {
+            "type": "java",
+            "name": "MainEstudiante",
+            "request": "launch",
+            "mainClass": "MainEstudiante",
+            "projectName": "ucc20262_663ae0dd"
+        },
+        {
+            "type": "java",
+            "name": "MainLibros",
+            "request": "launch",
+            "mainClass": "MainLibros",
+            "projectName": "ucc20262_663ae0dd"
+        },
+        {
+            "type": "java",
+            "name": "MainProductos",
+            "request": "launch",
+            "mainClass": "MainProductos",
+            "projectName": "ucc20262_663ae0dd"
+        },
+        {
+            "type": "java",
+            "name": "MainTrabajadores",
+            "request": "launch",
+            "mainClass": "MainTrabajadores",
+            "projectName": "ucc20262_663ae0dd"
+        },
+        {
+            "type": "java",
+            "name": "MainVehiculo",
+            "request": "launch",
+            "mainClass": "MainVehiculo",
+            "projectName": "ucc20262_663ae0dd"
+        },
+        {
+            "type": "java",
+            "name": "MostrarEstudianteUCC",
+            "request": "launch",
+            "mainClass": "MostrarEstudianteUCC",
+            "projectName": "ucc20262_663ae0dd"
+        },
+        {
+            "type": "java",
+            "name": "MainCompra",
+            "request": "launch",
+            "mainClass": "Taller.MainCompra",
+            "projectName": "ucc20262_663ae0dd"
+        }
+    ]
+}

@@ -5,10 +5,10 @@ public class Impresion extends Producto {
     private String color;
     private Foto[] fotos;
 
-    public Impresion(int id, String color) {
+    public Impresion(int id, String color, Foto[] fotos) {
         super(id);
         this.color = color;
-        this.fotos = new Foto[3];
+        this.fotos = fotos;
     }
 
     public void setFotos(Foto[] fotos) {
@@ -28,5 +28,10 @@ public class Impresion extends Producto {
         for (int i = 0; i < this.fotos.length; i++) {
             System.out.println("Foto " + (i + 1) + ": " + this.fotos[i]);
         }
+    }
+
+
+    public String toString() {
+        return "Impresion [color=" + color + ", fotos=" + java.util.Arrays.toString(fotos) + "]";
     }
 }

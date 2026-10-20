@@ -14,4 +14,10 @@ public class Pedido {
         this.fecha = fecha;
         this.numeroTarjetaCredito = numeroTarjetaCredito;
     }
+
+    public String toString() {
+        return "Pedido [cliente=" + cliente + ", producto=" + java.util.Arrays.toString(producto) + ", fecha=" + fecha
+                + ", numeroTarjetaCredito=" + numeroTarjetaCredito + "]";
+    } 
+
 }
