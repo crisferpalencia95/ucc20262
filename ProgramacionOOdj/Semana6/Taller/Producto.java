@@ -16,7 +16,7 @@ public class Producto {
     }
 
     public String toString() {
-        return "Producto [id=" + id + "]";
+        return "Producto :{id=" + id + "}";
     }
     
 }

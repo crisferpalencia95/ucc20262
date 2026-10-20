@@ -27,7 +27,7 @@ public class Camara extends Producto {
     }
 
     public String toString() {
-        return "Camara [marca=" + marca + ", modelo=" + modelo + "]";
+        return "Camara :{marca=" + marca + ", modelo=" + modelo + "}";
     }
     
 }

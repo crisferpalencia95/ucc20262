@@ -32,6 +32,6 @@ public class Impresion extends Producto {
 
 
     public String toString() {
-        return "Impresion [color=" + color + ", fotos=" + java.util.Arrays.toString(fotos) + "]";
+        return "Impresion :{color=" + color + ", fotos=" + java.util.Arrays.toString(fotos) + "}";
     }
 }
