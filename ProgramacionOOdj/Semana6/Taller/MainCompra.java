@@ -11,7 +11,7 @@ public class MainCompra {
         productos[1] = new Impresion(2, "Blanco y Negro", new Foto[] { new Foto("foto4.jpg"), new Foto("foto5.jpg"), new Foto("foto6.jpg") });
         productos[2] = new Camara(0, "Canon", "Modelo XYZ");
 
-        Pedido pedido1 = new Pedido(cliente1, productos, new java.util.Date(), 1234567890);
+        Pedido pedido1 = new Pedido(cliente1, productos, new java.util.Date(), "Tarjeta", new Tarjeta("1234567890123456", 692, 5000));
 
         System.out.println(pedido1);
         Impresion impresion1 = (Impresion) productos[0];

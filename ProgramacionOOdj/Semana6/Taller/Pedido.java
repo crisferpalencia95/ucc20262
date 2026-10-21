@@ -6,18 +6,20 @@ public class Pedido {
     private Cliente cliente;
     private Producto[] producto;
     private Date fecha;
-    private int numeroTarjetaCredito;
+    private String tipoPago;
+    private Pago pago;
 
-    public Pedido(Cliente cliente, Producto[] producto, Date fecha, int numeroTarjetaCredito) {
+
+    public Pedido(Cliente cliente, Producto[] producto, Date fecha, String tipoPago, Pago pago) {
         this.cliente = cliente;
         this.producto = producto;
         this.fecha = fecha;
-        this.numeroTarjetaCredito = numeroTarjetaCredito;
+        this.tipoPago = tipoPago;
+        this.pago = pago;
     }
 
     public String toString() {
-        return "Pedido :{cliente=" + cliente + ", productos:{" + java.util.Arrays.toString(producto) + "}, fecha=" + fecha
-                + ", numeroTarjetaCredito=" + numeroTarjetaCredito + "}";
+        return "Pedido :{cliente=" + cliente + ", productos:{"+ java.util.Arrays.toString(producto) + "}, fecha=" + fecha + ", tipoPago=" + tipoPago + ", pago=" + pago + "}";
     } 
 
 }
